@@ -1,0 +1,47 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Lemon&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --container-color: #0f0f0f;
+    --white-color: #fff;
+    --text-color: #ededed;
+    --text-color-light: #b6b6b6;
+    --black-color: #000;
+    --border-color: #3d3d3d;
+    --heart-color: #f63d30;
+
+    --body-font: 'Roboto', sans-serif;
+    --normal-font-size: 14px;
+    --font-semi-bold: 600;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--container-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+    color: var(--text-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+

@@ -1,0 +1,46 @@
+/* Destop */
+@media screen and (min-width: 992px) {
+    .hide-on-destop {
+        display: none;
+    }
+
+    .home {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0 24px;
+    }
+}
+
+/* Table */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-table {
+        display: none;
+    }
+
+    .home__table {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0 24px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+    :root {
+        --normal-font-size: 16px
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+}
