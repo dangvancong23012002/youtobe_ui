@@ -31,9 +31,31 @@
                     </div>
                     <div class="header__navbar-list">
                         <div class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">
-                                <i class="uil uil-desktop header__navbar-item-icon"></i>
+                            <a href="javascript:openDevicesBottomSheet()" class="header__navbar-link">
+                                <i class="uil uil-rss-interface header__navbar-item-icon"></i>
                             </a>
+                            <div class="header__navbar-devices-bottom-sheet">
+                                <div class="header__navbar-devices-bottom-sheet-overlay"></div>
+                                <div class="header__navbar-devices-bottom-sheet-container">
+                                    <div class="header__navbar-devices-bottom-sheet-title">
+                                        Không có thiết bị nào
+                                    </div>
+                                    <div class="header__navbar-devices-bottom-sheet-list">
+                                        <div class="header__navbar-devices-bottom-sheet-item">
+                                            <i class="uil uil-desktop header__navbar-devices-bottom-sheet-icon"></i>
+                                            <span>Liên kết bằng mã TV</span>
+                                        </div>
+                                        <div class="header__navbar-devices-bottom-sheet-item">
+                                            <i class="uil uil-exclamation-octagon header__navbar-devices-bottom-sheet-icon"></i>
+                                            <span>Tìm hiểu thêm</span>
+                                        </div>
+                                    </div>
+                                    <div class="header__navbar-devices-bottom-sheet-close" onclick="closeDevicesBottomSheet()">
+                                        <i class="uil uil-multiply header__navbar-devices-bottom-sheet-icon"></i>
+                                        <span>Huỷ</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="header__navbar-item">
                             <a href="#" class="header__link">
@@ -58,9 +80,67 @@
                 </div>
                 <div class="header__bottom">
                     <div class="header__bottom-left">
-                        <span class="header__bottom-left-box">
+                        <span class="header__bottom-left-box" onclick="openNavbarMenu()">
                             <i class="uil uil-compass header__navbar-item-icon"></i>
                         </span>
+                        <div class="header__navbar-menu">
+                            <div class="header__navbar-menu-overlay"></div>
+                            <div class="header__navbar-menu-container">
+                                <div class="header__navbar-menu-logo">
+                                    <img src="./assets/img/youtobe_text_dark_logo.png" alt="" class="header__navbar-menu-logo-img">
+                                </div>
+                                <div class="header__navbar-menu-list">
+                                    <div class="header__navbar-menu-item">
+                                        <a href="#" class="header__navbar-menu-item-link">
+                                            <i class="uil uil-fire header__navbar-menu-icon"></i>
+                                            <div class="header__navbar-menu-item-sub">Thịnh hành</div>
+                                        </a>
+                                    </div>
+                                    <div class="header__navbar-menu-item">
+                                        <a href="#" class="header__navbar-menu-item-link">
+                                            <i class="uil uil-music-note header__navbar-menu-icon"></i>
+                                            <div class="header__navbar-menu-item-sub">Âm nhạc</div>
+                                        </a>
+                                    </div>
+                                    <div class="header__navbar-menu-item">
+                                        <a href="#" class="header__navbar-menu-item-link">
+                                            <i class="uil uil-cloud-wifi header__navbar-menu-icon"></i>
+                                            <div class="header__navbar-menu-item-sub">Trực tiếp</div>
+                                        </a>
+                                    </div>
+                                    <div class="header__navbar-menu-item">
+                                        <a href="#" class="header__navbar-menu-item-link">
+                                            <i class="uil uil-game-structure header__navbar-menu-icon"></i>
+                                            <div class="header__navbar-menu-item-sub">Trò chơi</div>
+                                        </a>
+                                    </div>
+                                    <div class="header__navbar-menu-item">
+                                        <a href="#" class="header__navbar-menu-item-link">
+                                            <i class="uil uil-newspaper header__navbar-menu-icon"></i>
+                                            <div class="header__navbar-menu-item-sub">Tin tức</div>
+                                        </a>
+                                    </div>
+                                    <div class="header__navbar-menu-item">
+                                        <a href="#" class="header__navbar-menu-item-link">
+                                            <i class="uil uil-trophy header__navbar-menu-icon"></i>
+                                            <div class="header__navbar-menu-item-sub">Thể thao</div>
+                                        </a>
+                                    </div>
+                                    <div class="header__navbar-menu-item">
+                                        <a href="#" class="header__navbar-menu-item-link">
+                                            <i class="uil uil-lightbulb-alt header__navbar-menu-icon"></i>
+                                            <div class="header__navbar-menu-item-sub">Học tập</div>
+                                        </a>
+                                    </div>
+                                    <div class="header__navbar-menu-item">
+                                        <a href="#" class="header__navbar-menu-item-link">
+                                            <i class="uil uil-shopping-bag header__navbar-menu-icon"></i>
+                                            <div class="header__navbar-menu-item-sub">Thời trang và làm đẹp</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="header__bottom-space"></div>
                     <div class="header__bottom-right">
@@ -84,7 +164,38 @@
                     </div>
                 </div>
             </header>
+            <div class="app__container">
+                <div class="app__container-item" style="background-image: url(./assets/img/youtobe_logo.jpg);"></div>
+            </div>
+            <div class="bottom">
+                <div class="bottom__navigation">
+                    <div class="bottom__navigation-list">
+                        <div class="bottom__navigation-item">
+                            <i class="uil uil-estate bottom__navigation-item-icon"></i>
+                            <div class="bottom__navigation-item-sub">Trang chủ</div>
+                        </div>
+                        <div class="bottom__navigation-item">
+                            <i class="uil uil-airplay bottom__navigation-item-icon"></i>
+                            <div class="bottom__navigation-item-sub">Shorts</div>
+                        </div>
+                        <div class="bottom__navigation-item">
+                            <div class="bottom__navigation-item-add">
+                                <i class="uil uil-plus-circle bottom__navigation-item-add-icon"></i>
+                            </div>
+                        </div>
+                        <div class="bottom__navigation-item">
+                            <i class="uil uil-book-medical bottom__navigation-item-icon"></i>
+                            <div class="bottom__navigation-item-sub">Kênh đăng ký</div>
+                        </div>
+                        <div class="bottom__navigation-item">
+                            <i class="uil uil-clinic-medical bottom__navigation-item-icon"></i>
+                            <div class="bottom__navigation-item-sub">Thư viện</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<script src="./assets/js/index.js"></script>
 </html>
