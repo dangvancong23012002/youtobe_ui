@@ -6,6 +6,8 @@
     --white-color: #fff;
     --text-color: #ededed;
     --text-color-light: #b6b6b6;
+    --text-color-link: #40a5f7;
+    --first-color: #272727;
     --black-color: #000;
     --border-color: #3d3d3d;
     --heart-color: #f63d30;
@@ -43,5 +45,63 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+/* Video Item */
+.video__item-bg {
+    position: relative;
+    height: 240px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video__item-time {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.video__item-info {
+    padding: 12px 10px 12px 16px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.video__item-info-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video__item-info-text {
+    flex: 1;
+}
+
+.video__item-info-title {
+    height: 40px;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.video__item-info-sub,
+.video__item-info-time {
+    font-size: 12px;
+    color: var(--text-color-light);
+}
+
+.video__item-info-sub {
+    margin: 4px 0 2px 0;
 }
 
